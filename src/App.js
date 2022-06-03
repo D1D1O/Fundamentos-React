@@ -12,6 +12,8 @@ import ParouImpar from './components/condicional/ParouImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
+import Input from './components/formulario/Input';
+import Contador from './components/contador/Contador';
 
 const rd = Math.floor(Math.random() * (700 - 10 + 1)) + 10;
 
@@ -20,6 +22,15 @@ export default _ =>
     <h1>Fundamentos React</h1>
 
     <div className='Cards'>
+
+
+    <Card titulo="#13 -Contador" color="#12333F">
+        <Contador numeroInicial={10} />
+    </Card>
+
+    <Card titulo="#12 -Componente Controlado (Input)" color="#f3d">
+        <Input />
+    </Card>
 
     <Card titulo="#11 -Comunicação Indireta Pai" color="#f6aa3d">
         <IndiretaPai />
