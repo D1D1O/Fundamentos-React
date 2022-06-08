@@ -14,6 +14,7 @@ import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import Input from './components/formulario/Input';
 import Contador from './components/contador/Contador';
+import Mega from './components/mega/Mega';
 
 const rd = Math.floor(Math.random() * (700 - 10 + 1)) + 10;
 
@@ -23,6 +24,10 @@ export default _ =>
 
     <div className='Cards'>
 
+
+    <Card titulo="#14 - Mega" color="#12F9">
+        <Mega qtde={4} />
+    </Card>
 
     <Card titulo="#13 -Contador" color="#12333F">
         <Contador numeroInicial={10} />
